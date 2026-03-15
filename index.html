@@ -52,17 +52,23 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Office.loader.js";
+      var loaderUrl = buildUrl + "/ProjectSeekflowDemoOfice.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Office.data",
-        frameworkUrl: buildUrl + "/Office.framework.js",
-        codeUrl: buildUrl + "/Office.wasm",
+        dataUrl: buildUrl + "/ProjectSeekflowDemoOfice.data",
+        frameworkUrl: buildUrl + "/ProjectSeekflowDemoOfice.framework.js",
+        codeUrl: buildUrl + "/ProjectSeekflowDemoOfice.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Seekflow",
         productName: "Project Seekflow",
         productVersion: "1.0",
         showBanner: unityShowBanner,
+        // errorHandler: function(err, url, line) {
+        //    alert("error " + err + " occurred at line " + line);
+        //    // Return 'true' if you handled this error and don't want Unity
+        //    // to process it further, 'false' otherwise.
+        //    return true;
+        // },
       };
 
       // By default, Unity keeps WebGL canvas render target size matched with
